@@ -1,4 +1,4 @@
-package com.artistecomm.update
+package com.artistecomm.fragments.update
 
 import android.os.Bundle
 import android.text.Editable

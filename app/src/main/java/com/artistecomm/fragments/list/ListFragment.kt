@@ -11,12 +11,12 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.artistecomm.ViewModel.UserViewModel
 import com.artistecomm.model.User
-import com.artistecomm.Interface.updateInterface
+import com.artistecomm.Interface.deleteUserInterface
 
 import com.artistecomm.roomdb_test.R
 import kotlinx.android.synthetic.main.fragment_list.view.*
 
-class listFragment : Fragment(), updateInterface {
+class listFragment : Fragment(), deleteUserInterface {
 
     lateinit var mUserViewModel : UserViewModel
     override fun onCreateView(
@@ -44,6 +44,6 @@ class listFragment : Fragment(), updateInterface {
     }
 
     override fun getUserValue(user: User) {
-        findNavController().navigate(R.id.action_listFragment_to_updateFragment)
+        mUserViewModel.deleteUser(user)
     }
 }

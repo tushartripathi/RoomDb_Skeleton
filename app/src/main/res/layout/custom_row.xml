@@ -49,7 +49,17 @@
         android:text="23"
         android:textSize="22dp"
         android:layout_marginRight="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/deleteBtn"
         app:layout_constraintStart_toEndOf="@+id/lastnametextView"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/deleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_delete"
+        android:padding="10dp"
+        app:layout_constraintStart_toEndOf="@+id/agetextView"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
 </androidx.constraintlayout.widget.ConstraintLayout>

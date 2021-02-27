@@ -1,70 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.artistecomm.fragments.add.addFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.artistecomm.update.UpdateFragment">
 
-<!--    <fragment-->
-<!--        android:id="@+id/fragment"-->
-<!--        android:name="androidx.navigation.fragment.NavHostFragment"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        app:defaultNavHost="true"-->
-<!--        app:navGraph="@navigation/my_nav" />-->
-
-    <TextView
-        android:id="@+id/textviewtitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="Add"
-        ></TextView>
 
 
     <EditText
-        android:id="@+id/editTextFirstName"
+        android:id="@+id/updateTextFirstName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="First Name"
-        app:layout_constraintTop_toBottomOf="@+id/textviewtitle"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:inputType="textPersonName"
         />
 
     <EditText
-        android:id="@+id/editTextLastName"
+        android:id="@+id/updateTextLastName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Last Name"
-        app:layout_constraintTop_toBottomOf="@+id/editTextFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/updateTextFirstName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:inputType="textPersonName"
 
-         />
+        />
 
     <EditText
-        android:id="@+id/editTextAge"
+        android:id="@+id/updateTextAge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Age"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLastName"
+        app:layout_constraintTop_toBottomOf="@+id/updateTextLastName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:inputType="number"
-         />
+        />
     <Button
-        android:id="@+id/ADDbutton"
+        android:id="@+id/updatebutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAge"
+        app:layout_constraintTop_toBottomOf="@+id/updateTextAge"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="ADD" />
+        android:text="update" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
